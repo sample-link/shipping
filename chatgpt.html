@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track A Shipment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .freight-options {
+            margin-top: 20px;
+        }
+        .freight-options a {
+            display: block;
+            margin: 5px 0;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TRACK A SHIPMENT</h1>
+        <p>Track your LTL, truckload, or intermodal shipment by entering your Track number below to get instant freight tracking information.</p>
+        <div>
+            <label for="trackNumber">Track by Number</label>
+            <input type="text" id="trackNumber" placeholder="Enter Track Number">
+            <label for="shipmentReference">Shipment Reference (BOL or PO):</label>
+            <input type="text" id="shipmentReference" placeholder="Enter Shipment Reference">
+            <label for="shipmentStartDate">Shipment Date Start:</label>
+            <input type="date" id="shipmentStartDate">
+            <label for="shipmentEndDate">Shipment Date End:</label>
+            <input type="date" id="shipmentEndDate">
+            <label for="originCountry">Origin Country:</label>
+            <select id="originCountry">
+                <option value="United State">United State</option>
+                <!-- Add more countries as needed -->
+            </select>
+            <label for="originZip">Origin ZIP/Postal Code:</label>
+            <input type="text" id="originZip" placeholder="Enter Origin ZIP/Postal Code">
+            <label for="destinationCountry">Destination Country:</label>
+            <select id="destinationCountry">
+                <option value="United State">United State</option>
+                <!-- Add more countries as needed -->
+            </select>
+            <label for="destinationZip">Destination ZIP/Postal Code:</label>
+            <input type="text" id="destinationZip" placeholder="Enter Destination ZIP/Postal Code">
+        </div>
+        <div class="button-container">
+            <button onclick="trackShipment()">Track</button>
+        </div>
+        <div class="freight-options">
+            <h2>SELECT YOUR FREIGHT</h2>
+            <a href="#">AIR FREIGHT TRACKING</a>
+            <a href="#">OCEAN FREIGHT TRACKING</a>
+            <a href="#">ROAD & RAIL FREIGHT TRACKING</a>
+        </div>
+    </div>
+
+    <script>
+        function trackShipment() {
+            // Add tracking functionality here
+            alert("Tracking submitted.");
+        }
+    </script>
+</body>
+</html>

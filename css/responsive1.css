@@ -1,0 +1,192 @@
+/* for large devices */
+
+@media screen and (max-width:1200px) {
+    .navbar li {
+        padding-inline: 10px;
+    }
+
+    .All_project_content_holder h6 {
+        font-size: 15px;
+
+    }
+}
+
+/* for laptop */
+@media screen and (max-width:992px) {
+    .top_nav {
+        font-size: 14px;
+    }
+
+    .our_services_box_holder img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .our_services_box_holder {
+        margin-bottom: 25px;
+    }
+
+    .shipping_content_holder h2 {
+        font-size: 30px;
+
+    }
+
+    .navbar {
+        margin-block: 10px;
+    }
+
+    .nav-item>a {
+        padding-block: 15px;
+    }
+
+    .search {
+        display: none !important;
+    }
+
+    .my_carousel .carousel-item h2 {
+        font-size: 40px;
+
+    }
+
+    .my_carousel .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .all_assurance_content_holder {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+
+    .all_assurance_content_holder {
+        border: none;
+
+    }
+
+    .assurance_content_holder hr {
+        display: none;
+    }
+
+    .our_service_process hr {
+        display: none;
+    }
+
+    .All_project_content_holder {
+        margin-bottom: 40px;
+    }
+
+    .news_heading_para_holder {
+        width: 100%;
+    }
+
+
+
+
+}
+
+/* for tablet */
+@media screen and (max-width:768px) {
+
+    .top_nav {
+        font-size: 10px;
+    }
+
+    .my_carousel .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .shipping_content_holder h2 {
+        font-size: 28px;
+    }
+
+    .shipping_content_holder P {
+
+        font-size: 20px;
+
+    }
+
+    .my_carousel .carousel-item::before {
+        content: '';
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.448);
+    }
+
+    .why_choose_us_img_content_holder img {
+        display: none;
+    }
+
+    .why_choose_us_img_content_holder::before {
+
+        display: none;
+
+    }
+
+
+    .all_content_holder {
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+    .top_left {
+        display: none !important;
+    }
+
+    .shipping_content_holder P {
+        font-size: 16px;
+    }
+
+    .shipping_content_holder h2 {
+        font-size: 24px;
+    }
+
+    .get_section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 0, 0, 0.4);
+
+    }
+
+    .blog_box_content_holder h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-inline: 15px;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .all_assurance_content_holder {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+    }
+    .testimonial_img{
+        display: none;
+    }
+
+    .testimonial_awesome_para_holder{
+        width: 100%;
+    }
+}
+
+
+
+
+/* display grid in why choose us do again */

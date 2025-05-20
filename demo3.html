@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Button Toggle Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .content {
+            display: none; /* Initially hide both content sections */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <button id="button1" class="btn btn-primary">Show Data 1</button>
+        <button id="button2" class="btn btn-secondary">Show Data 2</button>
+
+        <div id="data1" class="content mt-3">
+            <div class="alert alert-info">This is the content for Button 1.</div>
+        </div>
+        <div id="data2" class="content mt-3">
+            <div class="alert alert-info">This is the content for Button 2.</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle button clicks
+        document.getElementById('button1').addEventListener('click', function() {
+            document.getElementById('data1').style.display = 'block'; // Show content for Button 1
+            document.getElementById('data2').style.display = 'none';  // Hide content for Button 2
+        });
+
+        document.getElementById('button2').addEventListener('click', function() {
+            document.getElementById('data2').style.display = 'block'; // Show content for Button 2
+            document.getElementById('data1').style.display = 'none';  // Hide content for Button 1
+        });
+    </script>
+</body>
+</html>
